@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-relativity",
   "description": "Metalsmith plugin that adds relativity path metadata to files",
-  "repository": "git://github.com/segmentio/metalsmith-ignore.git",
+  "repository": "git://github.com/krambuhl/metalsmith-relativity.git",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Evan Krambuhl <thekrambuhl@gmail.com> (http://stumptownbear.com)",
