@@ -1,6 +1,6 @@
 # metalsmith-relativity
 
-Metalsmith plugin that adds relativity path metadata to files.
+Metalsmith plugin that adds relativity path metadata to files.  This is a path prefix to move from file directory back to the source directory for metalsmith.
 
 ## Installation
 
@@ -16,6 +16,18 @@ var relativity = require('metalsmith-relativity');
 metalsmith.use(relativity({
   depth: 0 // !default
 }));
+```
+
+## Example
+
+__page/news/a-super-event.html__ 
+
+```
+---
+relativity: ../../
+---
+
+<img src="{{relativity}}assets/imgs/photo.jpg" />
 ```
 
 ## Options

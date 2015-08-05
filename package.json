@@ -2,7 +2,7 @@
   "name": "metalsmith-relativity",
   "description": "Metalsmith plugin that adds relativity path metadata to files",
   "repository": "git://github.com/krambuhl/metalsmith-relativity.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "Evan Krambuhl <thekrambuhl@gmail.com> (http://stumptownbear.com)",
   "main": "index.js",
@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "multimatch": "^2.0.0",
-    "object-path-get": "0.0.2",
-    "interpolate": "^0.1.0",
-    "moment": "^2.10.6",
-    "lodash": "^3.10.0"
+    "extend": "^3.0.0"
   },
   "devDependencies": {
     "metalsmith": "^2.0.1",
     "tape": "^4.0.1"
-  }
+  },
+  "keywords": [
+    "metalsmith",
+    "metalsmith-plugin",
+    "paths",
+    "filepath",
+    "directory"
+  ]
 }

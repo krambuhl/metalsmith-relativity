@@ -1,4 +1,4 @@
-var debug = require('debug')('metalsmith-rewrite');
+var debug = require('debug')('metalsmith-relativity');
 var extend = require('extend');
 var path = require('path');
 
@@ -14,7 +14,7 @@ module.exports = plugin;
  * Metalsmith plugin that adds relativity path metadata to files
  *
  * @param {Object|Array} options
- *   @property {String} 
+ *   @property {Number} depth starting depth of prefix
  * @return {Function}
  */
 
@@ -55,11 +55,10 @@ function plugin(options) {
 
 
 /**
- * Verify that expected keys are found in data 
+ * parse filepath for dir, ext, and name of file.
  *
- * @param {String} string
- * @param {Object} data
- * @return {Boolean}
+ * @param {String} filename
+ * @return {Object}
  */
 
 function parsePath(filename) {
